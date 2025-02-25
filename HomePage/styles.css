@@ -2,6 +2,7 @@
 body{
     padding: 0;
     margin: 0;
+    background-color: black;
 }
 
 /* Header */
@@ -9,18 +10,48 @@ body{
     background-color: #eeeeee !important;
 }
 /* Hero Section */
-#HeroSectionVideo{
-    position: fixed;
+.HStextBox > div{
+    position: relative;
+    height: fit-content;
+    padding-left: 30px;
+    top: 300px;
+}
+.HStextBox{
+    display: flex;
+    height: 100%;
     
+    color: white;
+}
+.PrimaryText{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.HeroSectionTitle{
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+.HeroSectionSubTitle{
+    font-size: 19px;
+    opacity: 80%;
+    margin-bottom: 150px;
+}
+.SecondaryText{
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
 }
 
-/* canvas{
-    display: block;
-} */
+.HSbottoms{
+    gap: 100px;
+}
+.HSbottoms > button{
+    width: 230px;
+}
 
-
-
-/* What Section */
-.What{
-    padding: 20px;
+#HeroSectionVideo{
+    width: 2000px;
+    height: 1300px;
 }
