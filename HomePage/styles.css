@@ -1,57 +1,184 @@
 /* General */
-body{
+body {
     padding: 0;
     margin: 0;
+    color: white;
     background-color: black;
 }
 
 /* Header */
-.NavBar{
-    background-color: #eeeeee !important;
+.NavBar {
+    background-color: black !important;
+    color: white !important;
 }
+
+.NavBar a {
+    color: white !important;
+}
+
+hr {
+    display: block;
+    color: white;
+    height: 2px;
+    width: 100%;
+}
+
 /* Hero Section */
-.HStextBox > div{
-    position: relative;
-    height: fit-content;
-    padding-left: 30px;
-    top: 300px;
+.HeroSection {
+    height: 900px;
+
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 10%, rgba(0, 0, 0, 0) 90%) no-repeat center top,
+        url(img/shubham-dhage-5LQ_h5cXB6U-unsplash.jpg) 0 0 /cover;
 }
-.HStextBox{
-    display: flex;
+
+.HStextBox>div {
+    position: relative;
+    top: 200px;
+    height: fit-content;
+    text-align: center;
+    padding-left: 40px;
+}
+
+.HStextBox {
     height: 100%;
-    
+    justify-content: center;
     color: white;
 }
-.PrimaryText{
+
+.PrimaryText {
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
-.HeroSectionTitle{
-    font-size: 55px;
+
+.HeroSectionTitle {
+    font-size: 32px;
     margin-bottom: 20px;
 }
-.HeroSectionSubTitle{
-    font-size: 19px;
+
+.HeroSectionSubTitle {
+    font-size: 14px;
     opacity: 80%;
-    margin-bottom: 150px;
+    margin-bottom: 40px;
 }
-.SecondaryText{
+
+.SecondaryText {
     font-family: "Open Sans", serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings:
-      "wdth" 100;
+        "wdth" 100;
 }
 
-.HSbottoms{
-    gap: 100px;
-}
-.HSbottoms > button{
-    width: 230px;
+.HSbottoms {
+    gap: 50px;
 }
 
-#HeroSectionVideo{
-    width: 2000px;
-    height: 1300px;
+.HSbottoms>button {
+    width: 150px;
+}
+
+#HeroSectionVideo {
+    position: absolute;
+    right: 0;
+    width: 200px;
+    height: 200 px;
+}
+
+/* About Us */
+.AboutUs {
+    color: white;
+}
+
+.EmptySpace {
+    height: 250px;
+}
+
+.carousel-inner {
+    height: 500px;
+    width: 75%;
+}
+
+.FeaturedProjects .card {
+    height: 300px;
+}
+
+.FPimage::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right,rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
+
+.FPimage img {
+    position: relative;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Reviews */
+.Reviews .card{
+    height: 150px;
+}
+.Reviews  img{
+    object-fit: contain !important;
+}
+.rating-area {
+	overflow: hidden;
+	width: 265px;
+}
+.rating-area:not(:checked) > input {
+	display: none;
+}
+.rating-area:not(:checked) > label {
+	float: right;
+	width: 42px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 32px;
+	line-height: 32px;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+	content: '★';
+}
+.rating-area > input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px goldenrod;
+}
+.rate-area > label:active {
+	position: relative;
+}
+
+
+.button-custom {
+    margin-top: 20px;
+    margin-right: 100px;
+    justify-self:right;
+
+}
+.button-link-custom {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+.button-icon-custom {
+    margin-left: 10px;
 }
