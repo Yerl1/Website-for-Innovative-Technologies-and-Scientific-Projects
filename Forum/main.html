@@ -50,7 +50,6 @@
                             </li>
                         </ul>
                         <div>
-                            <img src="img/account-circle.svg" alt="">
                             <a href="../UsersAuth/RegistrationPage/main.html">Register</a>
                             or
                             <a href="../UsersAuth/SignInPage/main.html">Login</a>
@@ -65,20 +64,7 @@
         </nav>
     </header>
     <section id="hero">
-        <h2>Join the Conversation. Shape the Future of Science & Technology.</h2>
-        <button id="browse-topics">Browse Topics</button>
-        <button id="start-discussion">Start a Discussion</button>
-    </section>
-
-    <section id="forum-categories">
-        <h2>Explore Discussions by Category</h2>
-        <ul>
-            <li>Artificial Intelligence</li>
-            <li>Space Exploration</li>
-            <li>Renewable Energy</li>
-            <li>Medical Science</li>
-            <li>Quantum Computing</li>
-        </ul>
+        <h2 style="color: black;">Join the Conversation. Shape the Future of Science & Technology.</h2>
     </section>
 
     <section id="trending">
@@ -90,16 +76,16 @@
 
     <section id="new-discussion">
         <h2>Start a Discussion</h2>
-        <form>
-            <input type="text" placeholder="Discussion Title" required>
-            <select>
+        <form id="newThreadForm">
+            <input type="text" placeholder="Discussion Title" required id="threadTitle">
+            <select id="threadCategory">
                 <option>Select Category</option>
                 <option>AI</option>
                 <option>Space</option>
                 <option>Medical</option>
             </select>
-            <textarea placeholder="Your message..." required></textarea>
-            <button type="submit">Post</button>
+            <textarea placeholder="Your message..." required id="threadMessage"></textarea>
+            <button type="submit" class="w-100">Post</button>
         </form>
     </section>
 

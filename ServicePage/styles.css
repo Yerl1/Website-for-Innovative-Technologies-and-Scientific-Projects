@@ -1,6 +1,7 @@
 .HeroSection{
     height: 700px;
 }
+
 .HStext{
     position: relative;
     top: 150px;
@@ -34,4 +35,21 @@
     left: 0;
     transform: rotate(-5deg);
     /* border: 1px red solid; */
+}
+
+hr {
+    display: block;
+    color: black;
+    height: 2px;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 990px) {
+    .HeroSection{
+        height: 400px;
+    }
+    .HSimage{
+        display: none;
+    }
 }

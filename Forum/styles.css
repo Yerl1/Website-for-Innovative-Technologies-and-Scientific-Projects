@@ -2,24 +2,15 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #7b6bf2;
 }
 
 
 #hero {
-    background: url('https://source.unsplash.com/1600x900/?technology,science') no-repeat center center/cover;
+    background: linear-gradient(rgb(82, 99, 226), rgb(85, 174, 206));
     color: white;
     text-align: center;
     padding: 50px 20px;
-}
-#hero button {
-    margin: 10px;
-    padding: 10px 20px;
-    border: none;
-    background: #007BFF;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
 }
 #hero button:hover {
     background: #0056b3;
@@ -56,3 +47,16 @@ footer {
     background: #222;
     color: white;
 }
+.thread {
+    background-color: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  .thread h3 {
+    margin-top: 0;
+  }
+  .badge {
+    margin-bottom: 0.5rem;
+  }

@@ -6,6 +6,11 @@ body {
     background-color: black;
 }
 
+.rating-display {
+    color: #ffd700;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+}
 /* Header */
 .NavBar {
     background-color: black !important;
